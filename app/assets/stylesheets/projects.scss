@@ -1,0 +1,219 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+h2.project-title {
+  font-family: "Londrina Sketch", sans-serif;
+  color: white;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+.navbar {
+  margin: 0%;
+}
+
+.nav-link {
+  font-size: 1.25rem;
+}
+
+.btn-primary {
+  background-color: rgb(12, 236, 180); // Color de fondo del botón
+  border: none; // Sin borde
+  border-radius: 25px; // Bordes redondeados
+  padding: 10px 20px; // Espaciado interno del botón
+  transition: background-color 0.3s; // Transición para el color de fondo
+}
+
+/* Tarjetas */
+.card {
+  border: none; // Eliminar el borde por defecto
+  border-radius: 15px; // Bordes redondeados
+  transition: transform 0.3s, box-shadow 0.3s; // Efecto de transformación y sombra
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.1); // Sombra sutil para profundidad
+  padding: 10px;
+  &:hover {
+      transform: translateY(-10px); // Desplazamiento hacia arriba al pasar el mouse
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); // Sombra más intensa al pasar el mouse
+  }
+}
+
+.card-title {
+  font-size: 1.25rem; // Tamaño de fuente aumentado
+  font-weight: bold; // Negrita
+  color: #333; // Color del texto
+  margin-bottom: 10px; // Espaciado inferior
+}    
+
+.card-img-top {
+    border-radius: 15px ; // Bordes redondeados para la imagen
+    object-fit: contain; // Mantener la relación de aspecto de la imagen
+    height: 200px; // Altura fija para uniformidad
+    width: 100%;
+    margin-top: 10px;
+}
+
+.card-text {
+  font-size: 0.9rem; // Tamaño de fuente del texto
+  color: #666; // Color del texto más claro
+  margin-bottom: 15px; // Espaciado inferior}
+}
+
+/* Estilos para mejorar el modal */
+.modal-content {
+  border-radius: 20px; // Bordes redondeados en el modal
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); // Sombra más pronunciada
+  overflow: hidden; // Para que las imágenes grandes no se desborden
+}
+
+.modal-header {
+  background-color: #f8f9fa; // Color de fondo para la cabecera
+  border-bottom: 1px solid #dee2e6; // Línea sutil debajo del encabezado
+}
+
+.modal-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #333; // Texto en color oscuro
+}
+
+.modal-footer {
+  background-color: #f8f9fa; // Fondo similar al header
+  border-top: 1px solid #dee2e6; // Línea superior sutil
+}
+
+/* Para la imagen en el modal */
+.modal-img {
+  object-fit: contain; // Asegura que la imagen se vea completa sin recortes
+  max-width: 100%; // La imagen se ajusta al 100% del ancho del modal
+  max-height: 70vh;
+  height: auto; // Altura automática para mantener la proporción
+  max-height: 80vh; // Limita la altura al 80% del viewport para evitar que desborde
+  display: block;
+  margin: 0 auto; // Centra la imagen en el modal
+}
+
+/* Media queries para mejorar el modal en pantallas pequeñas */
+@media (max-width: 576px) {
+  .modal-content {
+    padding: 0 15px; // Reducir padding en pantallas pequeñas
+  }
+
+  .modal-title {
+    font-size: 1.5rem; // Tamaño de fuente más pequeño para pantallas móviles
+  }
+}
+
+
+/* Responsive Styles */
+
+/* Pantallas pequeñas (Móviles - por debajo de 576px) */
+@media (max-width: 575.98px) {
+  .navbar-brand img {
+    height: 80px;
+    width: 200px;
+  }
+
+  h2.project-title {
+    font-size: 1.8rem;
+  }
+
+  .navbar-toggler {
+    margin-bottom: 1rem;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+/* Pantallas medianas (Tablets - entre 576px y 767px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .navbar-brand img {
+    height: 100px;
+    width: 250px;
+  }
+
+  h2.project-title {
+    font-size: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+  }
+
+  .card-img-top {
+    height: 220px;
+    object-fit: cover;
+  }
+}
+
+/* Pantallas grandes (Escritorio - desde 768px en adelante) */
+@media (min-width: 768px) {
+  .navbar-brand img {
+    height: 130px;
+    width: 300px;
+  }
+
+  .nav-link {
+    font-size: 1.25rem;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+
+  .card-img-top {
+    height: 250px;
+    object-fit: cover;
+  }
+}
+
+/* Pantallas extra grandes (Escritorios grandes - desde 1200px en adelante) */
+@media (min-width: 1200px) {
+  .navbar-brand img {
+    height: 150px;
+    width: 320px;
+  }
+
+  h2.project-title {
+    font-size: 3rem;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .card-text {
+    font-size: 1.1rem;
+  }
+
+  .card-img-top {
+    height: 300px;
+    object-fit: cover;
+  }
+}
+

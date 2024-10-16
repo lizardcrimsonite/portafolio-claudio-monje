@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FUKU D esign & Devs</title>
+  </head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="<%= root_path %>">
+        <img src="<%= asset_path('fuk (1).png') %>" alt="Logo" style="height: 130px; width: 300px ml-3;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link h4" href="<%= root_path %>">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link h4" href="<%= about_path %>">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link h4" href="<%= projects_path %>">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link h4" href="<%= contact_path %>">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <section class="contact py-5">
+      <div class="container">
+        <h2 class="contact-title text-left mb-5">Contacto</h2>
+        <div class="row justify-content-center">
+          <!-- Formulario -->
+          <div class="col-12 col-sm-6 col-md-4">
+              <div class="card glass-card p-4">
+                <form>
+                  <%= form_with model: @message, local: true do |form| %>
+                    <div class="form-group">
+                      <%= form.label :name, class: 'form-label' %>
+                      <%= form.text_field :name, class: 'form-control' %>
+                    </div>
+                    <div class="form-group">
+                      <%= form.label :email, class: 'form-label' %>
+                      <%= form.email_field :email, class: 'form-control' %>
+                    </div>
+                    <div class="form-group">
+                      <%= form.label :content, class: 'form-label' %>
+                      <%= form.text_area :content, class: 'form-control', rows: 5 %>
+                    </div>
+                    <div class="text-center">
+                      <%= form.submit 'Enviar', class: 'btn btn-success' %>
+                    </div>
+                  <% end %>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </section>
+
+    <section class="gallery-3d">
+      <div class="gallery-item">
+        <img src="<%= asset_path('bulb-5422139_1280.jpg') %>" class="d-block w-100" alt="Imagen 1">
+      </div>
+      <div class="gallery-item">
+        <img src="<%= asset_path('water-7395510_1280.jpg') %>" class="d-block w-100" alt="Imagen 2">
+      </div>
+      <div class="gallery-item">
+        <img src="<%= asset_path('matrix-8464029_1280.png') %>" class="d-block w-100" alt="Imagen 3">
+      </div>
+      <div class="gallery-item">
+        <img src="<%= asset_path('fantasy.jpg') %>" class="d-block w-100" alt="Imagen 4">
+      </div>
+      <div class="gallery-item">
+        <img src="<%= asset_path('lantern-3713493_1280.jpg') %>" class="d-block w-100" alt="Imagen 5">
+      </div>
+      </div><div class="gallery-item">
+        <img src="<%= asset_path('ai-generated-8640900_1280.jpg') %>" class="d-block w-100" alt="Imagen 6">
+      </div>
+    </section>   
+
+        <!-- Footer Section -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <h5>Contacto</h5>
+        <p>Email: contacto@fukudesign.com | Teléfono: +56 9 1234 5678</p>
+        <div class="d-flex justify-content-center">
+          <a href="https://github.com/tu-perfil" target="_blank" class="text-white mx-3">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+          <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="text-white mx-3">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a href="mailto:tu-email@gmail.com" class="text-white mx-3">
+            <i class="fas fa-envelope fa-2x"></i>
+          </a>
+          <a href="https://www.facebook.com/tu-perfil" target="_blank" class="text-white mx-3">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+</body>
+<html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="path/to/your/css/file.css"> <!-- Enlace a tu archivo CSS -->
+</head>
+<body>
+
+  <!-- Sección principal -->
+  <section class="hero text-center">
+    <div class="container">
+      <a href="<%= about_path %>">
+        <img src="<%= asset_path('&brielogo.svg') %>" alt="Logo" class="hero-logo">
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer transparente -->
+  <footer class="footer text-center">
+    <div class="container">
+      <p class="footer-text">
+        © <%= Time.now.year %> Fuku Design & Devs - Valdivia, Chile
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

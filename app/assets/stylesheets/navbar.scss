@@ -1,0 +1,20 @@
+/* Navbar */
+.navbar {
+    background-color: #eee6e6cc; /* Fondo semitransparente */
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px; /* Cambia este valor según lo que necesites */
+    font-weight: bold; /* Mantén solo esta línea */
+    margin-left: 50px;
+    margin-right: 10px;
+    padding: 20px;
+    font-family: "Sixtyfour Convergence", sans-serif; /* Asegúrate de que esta línea esté aquí */
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #000; /* Color de texto */
+}
+
+

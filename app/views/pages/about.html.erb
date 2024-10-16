@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuku Design & Devs</title>
+    <link rel="stylesheet" href="application.scss">
+</head>
+<body>
+
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="<%= root_path %>">
+              <img src="<%= asset_path('fuk (1).png') %>" alt="Logo" style="height: 130px; width: 300px ">      
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link h4 " href="<%= root_path %>">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link h4" href="<%= about_path %>">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link h4" href="<%= projects_path %>">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link h4" href="<%= contact_path %>">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+          <section class="hero-about d-flex align-items-center justify-content-center">
+            <div class="container text-center">
+              <h1 class="display-4 text-white">Ya que estas aqui, quiero decirte algo</h1>
+              <p class="lead text-white">En un mundo digital en constante cambio, FUKU DESIGN & DEVS es tu aliado en la creación de experiencias extraordinarias.
+                Nuestra pasión por el diseño y la tecnología nos impulsa a convertir tus ideas en soluciones innovadoras que destacan y conectan. Con un enfoque centrado en el cliente,
+                  nuestro talentoso equipo transforma la complejidad en simplicidad, diseñando software intuitivo y sitios web cautivadores. Juntos, no solo construimos productos; creamos 
+                  historias que resuenan y dejan una huella duradera en el mundo digital.
+              </p>
+              <a href="#about-me" class="btn btn-outline-light btn-lg">Descubre más</a>
+            </div>
+          </section>
+
+          <section id="about-me" class="about py-5">
+            <div class="container">
+              <h2 class="text-center">Sobre Mí</h2>
+              <div class="row my-4 align-items-center">
+                <div class="col-12 col-sm-6 col-md-4 text-center">
+                    <img src="<%= asset_path('profile.png') %>" class="img-fluid rounded-circle mb-3" alt="Tu Foto de Perfil">
+                </div>
+                <div class="col-md-8">
+                  <p>
+                    Soy Claudio Monje, CEO, fundador y Desarrollador web ful-stack de FUKU Design & Devs,
+                    una empresa especializada en el desarrollo de software y diseño web innovador. 
+                    Con más de 10 años de experiencia en la industria, he liderado proyectos que van desde el diseño de interfaces intuitivas hasta el desarrollo de aplicaciones web escalables para clientes globales.
+                  </p>
+                  <p>
+                    Mi visión es transformar ideas creativas en soluciones digitales poderosas que impulsen el éxito de nuestros clientes. Fuku Design & Devs combina diseño de alta calidad con desarrollo tecnológico de vanguardia, brindando experiencias únicas y personalizadas.
+                  </p>
+                  <p>
+                    Mi objetivo es construir soluciones tecnológicas que sean eficientes, escalables y fáciles de mantener.
+                  </p>
+                  <a href="<%= projects_path %>" class="btn btn-dark rounded-circle">Proyectos</a>
+                </div>
+              </div>
+            </div>
+              <hr>
+          </section>
+          <section class="habilidades">
+            <div class="container">
+              <h2>Habilidades</h2>
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="skill-card text-center">
+                    <i class="fa fa-code fa-3x"></i>
+                    <h5>Desarrollo Web</h5>
+                    <p>Dominio de HTML, CSS y JavaScript para crear sitios web interactivos y responsivos.</p>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="skill-card text-center">
+                    <i class="fa fa-database fa-3x"></i>
+                    <h5>Base de Datos</h5>
+                    <p>Experiencia en SQL y NoSQL para el manejo de datos y optimización de consultas.</p>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="skill-card text-center">
+                    <i class="fa fa-paint-brush fa-3x"></i>
+                    <h5>Diseño Gráfico</h5>
+                    <p>Habilidades en diseño gráfico y creación de interfaces atractivas y funcionales.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="skill-card text-center">
+                    <i class="fa fa-mobile fa-3x"></i>
+                    <h5>Desarrollo Móvil</h5>
+                    <p>Conocimientos en desarrollo de aplicaciones móviles para Android e iOS.</p>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="skill-card text-center">
+                    <i class="fa fa-cogs fa-3x"></i>
+                    <h5>DevOps</h5>
+                    <p>Implementación de prácticas de DevOps para mejorar el flujo de trabajo y la entrega continua.</p>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="skill-card text-center">
+                    <i class="fa fa-users fa-3x"></i>
+                    <h5>Trabajo en Equipo</h5>
+                    <p>Capacidad para colaborar eficazmente en equipos multidisciplinarios.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+        <section id="about-company" class="">
+          <div class="container">
+            <h2 class="text-center mb-4">Acerca de Fuku Design & Devs</h2>
+            <div class="row">
+              <!-- Card Visión -->
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 shadow-sm">
+                  <div class="card-body text-center">
+                    <i class="fa fa-eye fa-3x mb-3 text-info"></i>
+                    <h5 class="card-title">Nuestra Visión</h5>
+                    <p class="card-text">Transformar ideas en experiencias digitales impactantes que conecten marcas con personas, impulsando la innovación en cada proyecto.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card Misión -->
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 shadow-sm">
+                  <div class="card-body text-center">
+                    <i class="fa fa-bullseye fa-3x mb-3 text-warning"></i>
+                    <h5 class="card-title">Nuestra Misión</h5>
+                    <p class="card-text">Brindar soluciones tecnológicas personalizadas que potencien el éxito de nuestros clientes, combinando diseño excepcional con desarrollo técnico de vanguardia.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card Valores -->
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 shadow-sm">
+                  <div class="card-body text-center">
+                    <i class="fa fa-heart fa-3x mb-3 text-danger"></i>
+                    <h5 class="card-title">Nuestros Valores</h5>
+                    <ul class="list-unstyled">
+                      <li>Innovación</li>
+                      <li>Compromiso con la Calidad</li>
+                      <li>Colaboración</li>
+                      <li>Adaptabilidad</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <!-- Card Servicios -->
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 shadow-sm">
+                  <div class="card-body text-center">
+                    <i class="fa fa-laptop-code fa-3x mb-3 text-dark"></i>
+                    <h5 class="card-title">Nuestros Servicios</h5>
+                    <ul class="list-unstyled">
+                      <li>Desarrollo Web Full Stack</li>
+                      <li>Diseño UI/UX</li>
+                      <li>Consultoría Tecnológica</li>
+                      <li>E-commerce</li>
+                      <li>DevOps y Gestión de Infraestructura</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card Clientes -->
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 shadow-sm">
+                  <div class="card-body text-center">
+                    <i class="fa fa-users fa-3x mb-3 text-success"></i>
+                    <h5 class="card-title">Nuestros Clientes</h5>
+                    <p class="card-text">Trabajamos con una amplia gama de clientes, desde startups tecnológicas hasta grandes empresas en retail, educación, salud y más.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card Contacto -->
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 shadow-sm">
+                  <div class="card-body text-center">
+                    <i class="fa fa-phone fa-3x mb-3 text-primary"></i>
+                    <h5 class="card-title">Contáctanos</h5>
+                    <p class="card-text">¿Tienes un proyecto en mente? ¡Hablemos! <br> Escríbenos a <a href="mailto:info@fukudesigndevs.com">info@fukudesigndevs.com</a> o llámanos al +56 9 8765 4321.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="clients hero-section">
+          <div class="container">
+            <h3 class="text-center ">Empresas con las que hemos trabajado</h3>
+            <div class="row text-center">
+              <!-- Logos de ejemplo -->
+              <div class="col-12 col-sm-6 col-md-4">
+                <img src="<%= asset_path('boss.png') %>" alt="Client 1" class="img-fluid">
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <img src="<%= asset_path('newbalance.png') %>" alt="Client 3" class="img-fluid">
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <img src="<%= asset_path('hermes.png') %>" alt="Client 2" class="img-fluid">
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <img src="<%= asset_path('gucci.png') %>" alt="Client 4" class="img-fluid">
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <img src="<%= asset_path('landrover.png') %>" alt="Client 5" class="img-fluid">
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <img src="<%= asset_path('adidassss.png') %>" alt="Client 6" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </section>
+  
+</body>
+</html>
+
+
+
+
+
+

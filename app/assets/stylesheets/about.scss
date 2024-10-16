@@ -1,0 +1,283 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0 0 15px;
+}
+
+/* Navbar */
+.navbar {
+  padding: 0;
+  margin-right: 10px;
+}
+
+.navbar-brand img {
+  width: 300px;
+  height: auto;
+  margin-left: 30px;
+}
+
+.nav-link {
+  color: #333;
+  padding: 0.5rem 1rem;
+  margin-left: 10px;
+}
+
+.nav-link:hover {
+  color: #0d0d0e;
+}
+
+/* Hero Section */
+.hero-about {
+  background: url('bulb-5422139_1280.jpg') no-repeat center center;
+  background-size: cover;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.hero-about h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-about p {
+  font-size: 1.3rem;
+}
+
+.btn-outline-light {
+  color: #fff;
+  border-color: #fff;
+  margin-top: 1.5rem;
+}
+
+.btn-outline-light:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Sección About */
+.about {
+  padding: 50px 0;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.about img {
+  border-radius: 50%;
+  width: 400px;
+  height: auto;
+}
+
+.about p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.about .btn-dark {
+  background-color: #333;
+  border-color: #333;
+}
+
+/* Sección Habilidades */
+.habilidades {
+  padding: 15px;
+}
+
+.habilidades h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.skill-card {
+  padding: 20px;
+  background-color: #0676e6;
+  margin-bottom: 30px; /* Aumenta el margen inferior para más espacio entre las tarjetas */
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  max-width: 90%; /* Limita el ancho máximo de las tarjetas */
+  margin-left: auto; /* Centra la tarjeta horizontalmente */
+  margin-right: auto; /* Centra la tarjeta horizontalmente */
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+}
+
+.skill-card i {
+  margin-bottom: 10px;
+  color: #00ff88;
+}
+
+.skill-card h5 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.skill-card p {
+  margin-bottom: 10px;
+  font-size: 1.0rem;
+  color: white;
+}
+
+/* Sección Empresa */
+#about-company {
+  background-image: url('colour-textura.jpg'); /* Asegúrate de que el nombre de la imagen sea correcto */
+  margin-bottom: 25px;
+  padding: 60px;
+}
+
+#about-company h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.card {
+  border: none;
+  transition: box-shadow 0.3s ease;
+  height: auto;
+  margin-bottom: 30px; /* Añade espaciado inferior entre las cards */
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card i {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+/* Ajustes para pantallas medianas y pequeñas */
+@media (max-width: 768px) {
+  #about-company .card {
+    margin-bottom: 20px; /* Espaciado adicional para pantallas pequeñas */
+}
+ .row {
+    margin-left: 0;  /* Ajusta márgenes para evitar tarjetas pegadas */
+    margin-right: 0; /* Ajusta márgenes para evitar tarjetas pegadas */
+  }
+
+  .card-body {
+    padding: 20px; /* Aumenta el padding en la tarjeta para mejorar la separación */
+  }
+}
+/* Para teléfonos pequeños */
+@media (max-width: 576px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col-12 {
+    margin-bottom: 30px; /* Añadir más espaciado para pantallas más pequeñas */
+  }
+  
+  #about-company .card {
+    margin-bottom: 30px; /* Más espaciado para pantallas muy pequeñas */
+  }
+}
+/* Logos de Clientes */
+.clients {
+  background-image: url('abstract-1846853_1280.jpg'); /* Asegúrate de que el nombre de la imagen sea correcto */
+  background-size: cover; /* Asegúrate de que la imagen cubra el área */
+  padding: 40px 0; /* Espaciado superior e inferior */
+  color: rgb(7, 7, 7); /* Color de texto */
+  text-align: center; /* Centra el texto */
+  margin-top: 50px; /* Ajusta el margen superior para espaciar */
+}
+
+.clients h3 {
+  margin-bottom: 30px; /* Espacio inferior del título */
+  font-size: 2rem; /* Tamaño de la fuente del título */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para el texto */
+}
+
+.clients .row {
+  justify-content: center; /* Centra las columnas en la fila */
+}
+
+.clients img {
+  max-width: 300px; /* Tamaño máximo de las imágenes */
+  height: auto; /* Mantiene la relación de aspecto */
+  padding: 10px; /* Espaciado alrededor de las imágenes */
+  transition: transform 0.3s ease; /* Efecto de transición */
+}
+
+.clients img:hover {
+  transform: scale(1.1); /* Escala las imágenes al pasar el ratón */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+
+  .hero-about h1 {
+    font-size: 2rem;
+  }
+
+  .hero-about p {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  .about img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .about h2, .habilidades h2, .clients h3 {
+    font-size: 2rem;
+  }
+
+  .skill-card {
+    margin: 0 10px; /* Espaciado lateral para las tarjetas */
+    margin-bottom: 40px; /* Aumenta el margen inferior aún más para teléfonos */
+
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-card {
+    margin-bottom: 30px; /* Asegura que hay espacio suficiente entre tarjetas */
+    max-width: 90%; /* Mantiene las tarjetas más estrechas */
+  }
+
+  .hero-about {
+    height: 70vh; /* Reduce la altura en pantallas pequeñas */
+  }
+
+  .hero-about h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-about p {
+    font-size: 0.9rem;
+  }
+
+  .about, .habilidades, #about-company, .clients {
+    padding: 20px 10px; /* Menos padding en secciones */
+  }
+
+  .clients img {
+    max-width: 150px; /* Tamaño máximo de las imágenes en pantallas pequeñas */
+  }
+  
+}

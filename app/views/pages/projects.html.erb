@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuku Design & Devs - Proyectos</title>
+    <link rel="stylesheet" href="application.scss">
+</head>
+<body>
+
+  <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="<%= root_path %>">
+              <img src="<%= asset_path('fuk (1).png') %>" alt="Logo" style="height: 130px; width: 300px ">      
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link h4 " href="<%= root_path %>">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link h4" href="<%= about_path %>">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link h4" href="<%= projects_path %>">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link h4" href="<%= contact_path %>">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+  <section class="projects">
+    <div class="container">
+      <h2 class="project-title text-center mb-5">Nuestros Proyectos</h2>
+      <div class="row">
+        <!-- Tarjeta 1: Gucci -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="<%= asset_path('marcagucci.jpg') %>" class="card-img-top" alt="Proyecto Hermes">
+            <div class="card-body">
+              <h5 class="card-title">Gucci - Campaña Digital</h5>
+              <p class="card-text">Desarrollo de campaña digital internacional para el lanzamiento de su nueva línea de ropa de lujo.</p>
+              <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2: Land Rover -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="<%= asset_path('landrover_tienda.png') %>" class="card-img-top" alt="Proyecto Hermes">
+            <div class="card-body">
+              <h5 class="card-title">Land Rover - Plataforma de Experiencia</h5>
+              <p class="card-text">Desarrollo de plataforma interactiva para clientes, permitiendo explorar y personalizar vehículos en 3D.</p>
+              <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3: New Balance -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="<%= asset_path('publinewbalance.jpeg') %>" class="card-img-top" alt="Proyecto Hermes">
+            <div class="card-body">
+              <h5 class="card-title">New Balance - Tienda Online</h5>
+              <p class="card-text">Diseño y desarrollo de la nueva tienda online, optimizada para dispositivos móviles y con un sistema de pago seguro.</p>
+              <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4: Adidas -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="<%= asset_path('addpublicidad.jpg') %>" class="card-img-top" alt="Proyecto Hermes">
+            <div class="card-body">
+              <h5 class="card-title">Adidas - App de Entrenamiento</h5>
+              <p class="card-text">Desarrollo de una app móvil personalizada para entrenamiento con funciones de seguimiento de actividades y progreso.</p>
+              <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#projectModal4">
+                Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 5: Hugo Boss -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="<%= asset_path('Hugo Boss Para Hombre.jpeg') %>" class="card-img-top" alt="Proyecto Hermes">
+            <div class="card-body">
+              <h5 class="card-title">Hugo Boss - Rediseño Corporativo</h5>
+              <p class="card-text">Rediseño de la imagen corporativa y desarrollo de una plataforma para eventos de moda exclusivos.</p>
+              <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#projectModal5">
+                Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 6: Hermes -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="<%= asset_path('store-Hermes.webp') %>" class="card-img-top" alt="Proyecto Hermes">
+            <div class="card-body">
+              <h5 class="card-title">Hermes - E-commerce de Lujo</h5>
+              <p class="card-text">Desarrollo de un sitio de comercio electrónico de lujo con integraciones de realidad aumentada para visualizar productos.</p>
+              <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#projectModal6">
+                Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modales para Detalles de Proyectos -->
+  <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalLabel1">Gucci - Campaña Digital</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="<%= asset_path('marcagucci.jpg') %>" class="modal-img" alt="Proyecto Hermes">
+          <p><strong>Descripción:</strong> Desarrollo de campaña digital internacional para Gucci, lanzando su nueva línea de lujo a través de plataformas en redes sociales y medios digitales.</p>
+          <p><strong>Tecnologías utilizadas:</strong> Adobe Creative Suite, HTML5, CSS3, JavaScript.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Land Rover -->
+  <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalLabel2">Land Rover - Plataforma de Experiencia</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="<%= asset_path('landrover_tienda.png') %>" class="modal-img" alt="Proyecto Hermes">
+          <p><strong>Descripción:</strong> Desarrollo de una plataforma interactiva que permite a los clientes explorar y personalizar vehículos en 3D, ofreciendo una experiencia de usuario única.</p>
+          <p><strong>Tecnologías utilizadas:</strong> WebGL, JavaScript, HTML5, CSS3.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: New Balance -->
+  <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalLabel3">New Balance - Tienda Online</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="<%= asset_path('publinewbalance.jpeg') %>" class="modal-img" alt="Proyecto Hermes">
+          <p><strong>Descripción:</strong> Diseño y desarrollo de una tienda en línea optimizada para dispositivos móviles, con un sistema de pago seguro y una experiencia de usuario fluida.</p>
+          <p><strong>Tecnologías utilizadas:</strong> Shopify, JavaScript, HTML5, CSS3.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Adidas -->
+  <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModalLabel4" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalLabel4">Adidas - App de Entrenamiento</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="<%= asset_path('addpublicidad.jpg') %>" class="modal-img" alt="Proyecto Hermes">
+          <p><strong>Descripción:</strong> Desarrollo de una aplicación móvil personalizada para entrenamiento, con funciones avanzadas de seguimiento de actividades y progreso en tiempo real.</p>
+          <p><strong>Tecnologías utilizadas:</strong> React Native, Firebase, APIs de Salud.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Hugo Boss -->
+  <div class="modal fade" id="projectModal5" tabindex="-1" aria-labelledby="projectModalLabel5" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalLabel5">Hugo Boss - Rediseño Corporativo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="<%= asset_path('Hugo Boss Para Hombre.jpeg') %>" class="modal-img" alt="Proyecto Hermes">   
+          <p><strong>Descripción:</strong> Rediseño completo de la imagen corporativa y desarrollo de una plataforma de eventos exclusivos para clientes de lujo, mejorando la presencia digital de la marca.</p>
+          <p><strong>Tecnologías utilizadas:</strong> WordPress, PHP, CSS3, HTML5.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6: Hermes -->
+  <div class="modal fade" id="projectModal6" tabindex="-1" aria-labelledby="projectModalLabel6" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalLabel6">Hermes - E-commerce de Lujo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="<%= asset_path('store-Hermes.webp') %>" class="modal-img" alt="Proyecto Hermes">
+          <p><strong>Descripción:</strong> Desarrollo de un sitio de comercio electrónico enfocado en productos de lujo, con integraciones de realidad aumentada para permitir a los usuarios visualizar los productos en su entorno.</p>
+          <p><strong>Tecnologías utilizadas:</strong> AR.js, Shopify, JavaScript, CSS3.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

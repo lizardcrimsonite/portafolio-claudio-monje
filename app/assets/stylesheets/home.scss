@@ -1,0 +1,61 @@
+.hero {
+  background-image: url('textura-navbar.svg'); /* Imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Usa min-height para evitar espacios al final */
+  color: rgb(18, 18, 19);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0; /* Eliminar cualquier padding extra */
+  margin: 0; /* Eliminar cualquier margen extra */
+}
+
+.hero-logo {
+  width: 1000px; /* Asegura que la imagen nunca sea más grande que su contenedor */
+  height: 450px;    /* Mantiene la proporción de la imagen */
+  transition: transform 0.3s ease; /* Animación suave para hover */
+}
+
+.hero-logo:hover {
+  transform: scale(1.5); /* Aumenta ligeramente el tamaño cuando pasas el cursor */
+}
+
+@media (max-width: 768px) {
+  .hero-logo {
+    width: 90%; /* En pantallas medianas o más pequeñas, ajusta el tamaño al 80% del contenedor */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-logo {
+    width: 90%; /* En pantallas muy pequeñas, ajusta el tamaño al 60% */
+  }
+}
+.footer {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con transparencia */
+  color: white;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .footer-text {
+    font-size: 14px; /* Ajuste de tamaño en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-text {
+    font-size: 12px; /* Ajuste de tamaño en pantallas pequeñas */
+  }
+}
