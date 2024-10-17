@@ -84,14 +84,13 @@ body {
   cursor: pointer;
 }
 
-/* Para la sección donde se encuentra la galería */
 section.gallery-3d-container {
   display: flex;
-  justify-content: center;  /* Centra horizontalmente */
-  align-items: center;      /* Centra verticalmente */
-  height: 100vh;            /* Hace que la sección ocupe toda la altura de la pantalla */
-  background-color: black !important; /* Asegura que el color de fondo se aplique */
-  backdrop-filter: blur(10px); /* Efecto borroso detrás */
+  justify-content: center;  
+  align-items: center;      
+  height: 100vh;            
+  background-color: black !important; 
+  backdrop-filter: blur(10px); 
 }
 
 .gallery-3d {
@@ -112,8 +111,8 @@ section.gallery-3d-container {
   height: 100%;
   backface-visibility: visible;
   transform-origin: center center -650px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra para cada imagen */
-  transition: transform 0.5s ease-out; /* Suaviza la animación */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+  transition: transform 0.5s ease-out; 
 }
 
 .gallery-item:nth-child(1) {
@@ -176,13 +175,13 @@ section.gallery-3d-container {
   height: 100%;
   object-fit: cover;
   object-fit: cover;
-  border-radius: 15px; /* Bordes redondeados para las imágenes */
-  transition: transform 0.5s ease, box-shadow 0.5s ease; /* Transiciones suaves para el hover */
+  border-radius: 15px; 
+  transition: transform 0.5s ease, box-shadow 0.5s ease; 
 }
 
 .gallery-item img:hover {
-  transform: scale(1.1); /* Aumenta el tamaño de la imagen al hacer hover */
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* Aumenta la sombra al hacer hover */
+  transform: scale(1.1); 
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); 
 }
 
 

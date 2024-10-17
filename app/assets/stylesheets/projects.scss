@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -20,96 +20,94 @@ h2.project-title {
 }
 
 .btn-primary {
-  background-color: rgb(12, 236, 180); // Color de fondo del botón
-  border: none; // Sin borde
-  border-radius: 25px; // Bordes redondeados
-  padding: 10px 20px; // Espaciado interno del botón
-  transition: background-color 0.3s; // Transición para el color de fondo
+  background-color: rgb(12, 236, 180); 
+  border: none; 
+  border-radius: 25px; 
+  padding: 10px 20px;
+  transition: background-color 0.3s; 
 }
 
-/* Tarjetas */
+
 .card {
-  border: none; // Eliminar el borde por defecto
-  border-radius: 15px; // Bordes redondeados
-  transition: transform 0.3s, box-shadow 0.3s; // Efecto de transformación y sombra
-  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.1); // Sombra sutil para profundidad
+  border: none; 
+  border-radius: 15px; 
+  transition: transform 0.3s, box-shadow 0.3s; 
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.1); 
   padding: 10px;
   &:hover {
-      transform: translateY(-10px); // Desplazamiento hacia arriba al pasar el mouse
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); // Sombra más intensa al pasar el mouse
+      transform: translateY(-10px); 
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); 
   }
 }
 
 .card-title {
-  font-size: 1.25rem; // Tamaño de fuente aumentado
-  font-weight: bold; // Negrita
-  color: #333; // Color del texto
-  margin-bottom: 10px; // Espaciado inferior
+  font-size: 1.25rem; 
+  font-weight: bold; 
+  color: #333; 
+  margin-bottom: 10px; 
 }    
 
 .card-img-top {
-    border-radius: 15px ; // Bordes redondeados para la imagen
-    object-fit: contain; // Mantener la relación de aspecto de la imagen
-    height: 200px; // Altura fija para uniformidad
+    border-radius: 15px ; 
+    object-fit: contain; 
+    height: 200px; 
     width: 100%;
     margin-top: 10px;
 }
 
 .card-text {
-  font-size: 0.9rem; // Tamaño de fuente del texto
-  color: #666; // Color del texto más claro
-  margin-bottom: 15px; // Espaciado inferior}
+  font-size: 0.9rem; 
+  color: #666; 
+  margin-bottom: 
 }
 
-/* Estilos para mejorar el modal */
+
 .modal-content {
-  border-radius: 20px; // Bordes redondeados en el modal
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); // Sombra más pronunciada
-  overflow: hidden; // Para que las imágenes grandes no se desborden
+  border-radius: 20px; 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); 
+  overflow: hidden; 
 }
 
 .modal-header {
-  background-color: #f8f9fa; // Color de fondo para la cabecera
-  border-bottom: 1px solid #dee2e6; // Línea sutil debajo del encabezado
+  background-color: #f8f9fa; 
+  border-bottom: 1px solid #dee2e6; 
 }
 
 .modal-title {
   font-size: 1.75rem;
   font-weight: bold;
-  color: #333; // Texto en color oscuro
+  color: #333; 
 }
 
 .modal-footer {
-  background-color: #f8f9fa; // Fondo similar al header
-  border-top: 1px solid #dee2e6; // Línea superior sutil
+  background-color: #f8f9fa; 
+  border-top: 1px solid #dee2e6; 
 }
 
-/* Para la imagen en el modal */
+
 .modal-img {
-  object-fit: contain; // Asegura que la imagen se vea completa sin recortes
-  max-width: 100%; // La imagen se ajusta al 100% del ancho del modal
+  object-fit: contain; 
+  max-width: 100%; 
   max-height: 70vh;
-  height: auto; // Altura automática para mantener la proporción
-  max-height: 80vh; // Limita la altura al 80% del viewport para evitar que desborde
+  height: auto; 
+  max-height: 80vh; 
   display: block;
-  margin: 0 auto; // Centra la imagen en el modal
+  margin: 0 auto; 
 }
 
-/* Media queries para mejorar el modal en pantallas pequeñas */
+
 @media (max-width: 576px) {
   .modal-content {
-    padding: 0 15px; // Reducir padding en pantallas pequeñas
+    padding: 0 15px; 
   }
 
   .modal-title {
-    font-size: 1.5rem; // Tamaño de fuente más pequeño para pantallas móviles
+    font-size: 1.5rem; 
   }
 }
 
 
-/* Responsive Styles */
 
-/* Pantallas pequeñas (Móviles - por debajo de 576px) */
 @media (max-width: 575.98px) {
   .navbar-brand img {
     height: 80px;
@@ -192,7 +190,6 @@ h2.project-title {
   }
 }
 
-/* Pantallas extra grandes (Escritorios grandes - desde 1200px en adelante) */
 @media (min-width: 1200px) {
   .navbar-brand img {
     height: 150px;

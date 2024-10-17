@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.3.5"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.0.8", ">= 7.0.8.4"
+gem "rails", "~> 7.0.8"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -70,11 +70,11 @@ group :test do
 
 end
 
-gem 'sass-rails', '~> 6'
-gem 'bootstrap', '~> 5.3', '>= 5.3.3'
-gem 'dotenv-rails', '~> 3.1', '>= 3.1.4'
 gem 'ostruct'
 gem 'logger'
 gem 'base64'
 gem 'bigdecimal'
 gem 'mutex_m'
+gem 'sass-rails', '~> 6'
+gem 'bootstrap', '~> 5.3', '>= 5.3.3'
+gem 'dotenv-rails', groups: [:development, :test]
